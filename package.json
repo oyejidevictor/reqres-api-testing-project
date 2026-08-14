@@ -1,0 +1,20 @@
+{
+  "name": "reqres-api-testing-project",
+  "version": "1.0.0",
+  "description": "API automation testing project using Playwright and JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:users": "playwright test tests/users",
+    "test:auth": "playwright test tests/auth",
+    "test:pagination": "playwright test tests/pagination",
+    "test:workflow": "playwright test tests/workflows"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "dotenv": "^17.2.1"
+  }
+}
